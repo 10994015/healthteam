@@ -101,6 +101,7 @@
   background-color: #fff;
   border: 1px #ccc solid;
   border-radius: 6px;
+  position: relative;
 }
 #cms > .center > .content > .right > .list > div {
   width: 100%;
@@ -174,4 +175,20 @@
   overflow-y: scroll;
   height: 450px;
   width: 100%;
+}
+#cms .loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#cms .loading > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
 }
