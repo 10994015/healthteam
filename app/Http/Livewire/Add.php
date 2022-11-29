@@ -14,6 +14,7 @@ class Add extends Component
         $giveback = new Giveback();
         $giveback->student = $req->student;
         $giveback->score = $req->score;
+        $giveback->name = $req->name;
         $giveback->q1 =  (!isset($req->q1)) ? '0' : '1';
         $giveback->q2 =  (!isset($req->q2)) ? '0' : '1';
         $giveback->q3 =  (!isset($req->q3)) ? '0' : '1';

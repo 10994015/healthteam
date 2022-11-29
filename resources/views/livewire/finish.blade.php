@@ -6,7 +6,7 @@
         </h1> -->
         <div class="second">
         <img src="images2/LOGO.png" alt="">
-        <p>闖關成功<br>序號:0</p>
+        <p>闖關成功<br>序號:{{$count}}</p>
         </div>
         
         <p class="text">

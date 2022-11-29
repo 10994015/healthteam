@@ -18,8 +18,8 @@ form > img {
 form > .startBtn {
   position: absolute;
   display: block;
-  top: 39%;
-  right: 10px;
+  top: 49%;
+  right: 25px;
   display: flex;
   transform: translateY(-50%);
   justify-content: center;
@@ -67,13 +67,13 @@ form .start {
 
 @keyframes shadow {
   0% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
   100% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
 }
 form > a:hover {

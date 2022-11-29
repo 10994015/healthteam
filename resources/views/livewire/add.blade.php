@@ -13,11 +13,11 @@
             align-items: center;
         }
         .load{
-            width:200px;
+            width:50px;
         }
     </style>
     <div class="main">
-        <img src="/images2/load.gif" class="load">
+        <img src="/images2/loading.gif" class="load">
     </div>
 
 

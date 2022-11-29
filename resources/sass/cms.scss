@@ -81,8 +81,9 @@
                         font-size: 15px;
                     }
                     >button{
-                        width:150px;
-                        color:#000;
+                        width:103px;
+                        color:#333;
+                        margin-left: 3px;
                         &:hover{
                             color:#fff;
                         }
@@ -115,7 +116,7 @@
                 margin:0;
                 padding: 0;
                 margin:3px 0;
-                &.scoreView{
+                &.scoreView, &.questView{
                     cursor: pointer;
                     &:hover{
                         background-color: #ccc;
@@ -192,6 +193,33 @@
             left:50%;
             transform: translate(-50%, -50%);
             width:50px;
+        }
+    }
+}
+#feedback{
+    padding: 80px 0px;
+    table{
+        width:70%;
+        margin: 0 auto;
+    }
+    nav{
+        width:70%;
+        margin:50px auto;
+
+    }
+    .gohome{
+        text-align: center;
+        width:200px;
+        height: 48px;
+        border:1px #aaa solid;
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+        line-height: 45px;
+        transition: .3s;
+        &:hover{
+            background-color: #aaa;
+            color:#fff;
         }
     }
 }

@@ -16,6 +16,7 @@ class CreateGivebacksTable extends Migration
         Schema::create('givebacks', function (Blueprint $table) {
             $table->id();
             $table->string('student');
+            $table->string('name');
             $table->integer('score');
             $table->integer('q1');
             $table->integer('q2');

@@ -86,8 +86,9 @@
   font-size: 15px;
 }
 #cms > .center > .content > .right > .choose > button {
-  width: 150px;
-  color: #000;
+  width: 103px;
+  color: #333;
+  margin-left: 3px;
 }
 #cms > .center > .content > .right > .choose > button:hover {
   color: #fff;
@@ -118,10 +119,10 @@
   padding: 0;
   margin: 3px 0;
 }
-#cms > .center > .bottom > p.scoreView {
+#cms > .center > .bottom > p.scoreView, #cms > .center > .bottom > p.questView {
   cursor: pointer;
 }
-#cms > .center > .bottom > p.scoreView:hover {
+#cms > .center > .bottom > p.scoreView:hover, #cms > .center > .bottom > p.questView:hover {
   background-color: #ccc;
 }
 #cms footer {
@@ -191,4 +192,31 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50px;
+}
+
+#feedback {
+  padding: 80px 0px;
+}
+#feedback table {
+  width: 70%;
+  margin: 0 auto;
+}
+#feedback nav {
+  width: 70%;
+  margin: 50px auto;
+}
+#feedback .gohome {
+  text-align: center;
+  width: 200px;
+  height: 48px;
+  border: 1px #aaa solid;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  line-height: 45px;
+  transition: 0.3s;
+}
+#feedback .gohome:hover {
+  background-color: #aaa;
+  color: #fff;
 }

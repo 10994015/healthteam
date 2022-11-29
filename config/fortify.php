@@ -143,5 +143,9 @@ return [
             // 'window' => 0,
         ]),
     ],
+    
+    'redirects' => [
+        'logout' => '/login',
+    ]
 
 ];

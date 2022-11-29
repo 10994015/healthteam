@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\Add;
 use App\Http\Livewire\Cms;
+use App\Http\Livewire\Feedback;
 use App\Http\Livewire\Finish;
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Input;
@@ -24,14 +25,13 @@ Route::post('/start', Start::class);
 Route::post('/input', Input::class);
 Route::get('/finish', Finish::class);
 Route::post('/add', Add::class);
-Route::get('/cms', Cms::class);
+Route::get('/cms', Cms::class)->middleware('auth');
+Route::get('/feedbacks', Feedback::class)->middleware('auth');
 
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    
 });
