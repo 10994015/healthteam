@@ -1,6 +1,6 @@
 <div>
     <div class="pass">
-        <h1>英雄Online</h1>
+        {{-- <h1>英雄Online</h1>
         <h1 style="margin-left:100px">健康Mylife</h1>
         <!-- <h1 id="second">序號:
         </h1> -->
@@ -22,7 +22,7 @@
         11/17進行線上抽獎，贈送500元禮券，<br>
         共10名 (由系統自動判別符合資格者)，<br>
         感謝您的參加，衛生保健組關心您。
-        </p>
+        </p> --}}
         <a href="/" class="prehome">返回首頁</a>
     </div>
 

@@ -21,9 +21,9 @@ form{
     flex-direction: column;
 }
 form>input{
-    margin: 15px 0;
+    margin: 0px 0 13px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     border:none;
     outline: none;
     border:1px #ccc solid;
@@ -31,6 +31,7 @@ form>input{
     padding: 0 5px;
     box-sizing: border-box;
     font-size: 16px;
+    border-radius: 8px;
 }
 form>input[type="submit"]{
     width: 100%;
@@ -53,8 +54,9 @@ form>input[type="submit"]{
     justify-content: center;
     flex-direction: column;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif,"微軟正黑體";
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
+
 .Satisfaction>select{
     width: 90%;
     margin: auto;
@@ -66,6 +68,7 @@ form>input[type="submit"]{
 }
 .Satisfaction label{
     margin:4px 0;
+    font-size: 15px;
 }
 .Satisfaction label > input{
     margin-right: 5px;
@@ -73,11 +76,12 @@ form>input[type="submit"]{
 .Satisfaction textarea{
     width:100%;
     resize: none;
-    height: 70px;
+    height: 50px;
     border:1px #000 solid;
     border-radius: 8px;
     padding: 5px;
     box-sizing: border-box;
     outline: none;
+    font-size: 15px;
     margin-top: 8px;
 }

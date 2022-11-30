@@ -16,6 +16,7 @@ class Cms extends Component
     public $sampleArr = [];
     public $winner = [];
     public $total;
+    public $gameTotal;
     public $passTotal;
     public $score5;
     public $score4;
@@ -35,13 +36,13 @@ class Cms extends Component
     public function changeSelect(){
         if($this->selectSession != -1){
             $option = Option::where('id', $this->selectSession)->first();
-            $this->studentList = Game::whereBetween('created_at', [$option->start_time, $option->end_time])->where([['type1',1],['type2',2],['type3',3],['type4',4]])->get();
+            $this->studentList = Game::whereBetween('created_at', [$option->start_time, $option->end_time])->get();
             // log::info($this->studentList);
         }
     }
     public function addSample(){
         $option = Option::where('id', $this->selectSession)->first();
-        $this->studentList = Game::whereBetween('created_at', [$option->start_time, $option->end_time])->where([['type1',1],['type2',2],['type3',3],['type4',4]])->get()->toArray();
+        $this->studentList = Game::whereBetween('created_at', [$option->start_time, $option->end_time])->get()->toArray();
         if(count($this->studentList) < $this->peopleNum){
             $this->dispatchBrowserEvent('totalAlert');
             return;
@@ -83,6 +84,7 @@ class Cms extends Component
     public function render()
     {
         $this->total = Game::all()->count();
+        $this->gameTotal = Giveback::all()->count();
         $this->passTotal = Game::where([['type1',1], ['type2',2], ['type3',3], ['type4',4]])->count();
         $this->score5 = Giveback::where('score', 5)->count();
         $this->score4 = Giveback::where('score', 4)->count();
@@ -97,7 +99,7 @@ class Cms extends Component
         $this->quest5 = Giveback::where('q5', 1)->count();
         $this->quest6 = Giveback::where('q6', 1)->count();
         $option = Option::where('id', $this->selectSession)->first();
-        $this->studentList = Game::whereBetween('created_at', [$option->start_time, $option->end_time])->where([['type1',1],['type2',2],['type3',3],['type4',4]])->get();
+        $this->studentList = Game::whereBetween('created_at', [$option->start_time, $option->end_time])->get();
         $options = Option::all();
         $this->options = $options;
         $games = Game::where([['type1', '1'],['type2', '2'],['type3', '3]', ['type4', '4']]])->get();

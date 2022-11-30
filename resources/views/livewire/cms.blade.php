@@ -44,8 +44,8 @@
             </div>
         </div>
         <div class="bottom">
-            <p>總人數: {{$total}}</p>
-            <b>通過人數: {{$passTotal}} </b>
+            <b>總遊戲次數: {{$gameTotal}} </b>
+            <p>總遊戲人數: {{$total}}</p>
             <p class="scoreView" id="score5View" data-bs-toggle="modal" data-bs-target="#scoreModalLabel" wire:click="openScoreModal(5)">非常滿意: {{$score5}}</p>
             <p class="scoreView" id="score4View" data-bs-toggle="modal" data-bs-target="#scoreModalLabel" wire:click="openScoreModal(4)">滿意: {{$score4}}</p>
             <p class="scoreView" id="score3View" data-bs-toggle="modal" data-bs-target="#scoreModalLabel" wire:click="openScoreModal(3)">普通: {{$score3}}</p>
