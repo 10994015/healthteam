@@ -31,6 +31,12 @@
             <label for="q6">
                 <input type="checkbox" id="q6" name="q6" class="study">學會執行簡易自我傷口處理
             </label>
+            <label for="q7">
+                <input type="checkbox" id="q7" name="q7" class="study">我願意將今日所學的健康知識傳遞給身邊的朋友與同學
+            </label>
+            <label for="q8">
+                <input type="checkbox" id="q8" name="q8" class="study">我會想主動學習更多有關護眼、減糖及傷害預防與處理的知識。
+            </label>
             <textarea name="message" id="" placeholder="您對本次活動心得回饋..."></textarea>
         </div>
         <input type="hidden" name="inputData" value="insert">

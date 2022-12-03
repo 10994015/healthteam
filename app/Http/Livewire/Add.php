@@ -21,6 +21,8 @@ class Add extends Component
         $giveback->q4 =  (!isset($req->q4)) ? '0' : '1';
         $giveback->q5 =  (!isset($req->q5)) ? '0' : '1';
         $giveback->q6 =  (!isset($req->q6)) ? '0' : '1';
+        $giveback->q7 =  (!isset($req->q7)) ? '0' : '1';
+        $giveback->q8 =  (!isset($req->q8)) ? '0' : '1';
         $giveback->message = $req->message;
         $giveback->save();
 

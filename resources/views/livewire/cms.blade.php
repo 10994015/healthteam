@@ -60,6 +60,8 @@
             <p class="questView" data-bs-toggle="modal" data-bs-target="#questModalLabel" wire:click="openQuestModal('q4')"> 瞭解如何照顧傷口，降低感染的發生 : {{$quest4}}</p>
             <p class="questView" data-bs-toggle="modal" data-bs-target="#questModalLabel" wire:click="openQuestModal('q5')"> 瞭解傷口感染出現的症狀(紅腫熱痛) : {{$quest5}}</p>
             <p class="questView" data-bs-toggle="modal" data-bs-target="#questModalLabel" wire:click="openQuestModal('q6')"> 學會執行簡易自我傷口處理 : {{$quest6}}</p>
+            <p class="questView" data-bs-toggle="modal" data-bs-target="#questModalLabel" wire:click="openQuestModal('q7')"> 學會執行簡易自我傷口處理 : {{$quest7}}</p>
+            <p class="questView" data-bs-toggle="modal" data-bs-target="#questModalLabel" wire:click="openQuestModal('q8')"> 學會執行簡易自我傷口處理 : {{$quest8}}</p>
             <a href="/feedbacks" class="link-info" style="margin-top: 20px;display:block">查看完整詳細資料...</a>
         </div>
         

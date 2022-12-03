@@ -40,6 +40,12 @@
                     @if($giveback->q6 == 1)
                         <p>學會執行簡易自我傷口處理</p>
                     @endif
+                    @if($giveback->q7 == 1)
+                        <p>我願意將今日所學的健康知識傳遞給身邊的朋友與同學</p>
+                    @endif
+                    @if($giveback->q8 == 1)
+                        <p>我會想主動學習更多有關護眼、減糖及傷害預防與處理的知識</p>
+                    @endif
                 </td>
                 <td>{{ $giveback->message }}</td>
                 <td>{{$giveback->created_at}}</td>

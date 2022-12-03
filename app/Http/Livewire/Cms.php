@@ -31,6 +31,8 @@ class Cms extends Component
     public $quest4;
     public $quest5;
     public $quest6;
+    public $quest7;
+    public $quest8;
     public $questArr = [];
     
     public function changeSelect(){
@@ -98,11 +100,13 @@ class Cms extends Component
         $this->quest4 = Giveback::where('q4', 1)->count();
         $this->quest5 = Giveback::where('q5', 1)->count();
         $this->quest6 = Giveback::where('q6', 1)->count();
+        $this->quest7 = Giveback::where('q7', 1)->count();
+        $this->quest8 = Giveback::where('q8', 1)->count();
         $option = Option::where('id', $this->selectSession)->first();
         $this->studentList = Game::whereBetween('created_at', [$option->start_time, $option->end_time])->get();
         $options = Option::all();
         $this->options = $options;
-        $games = Game::where([['type1', '1'],['type2', '2'],['type3', '3]', ['type4', '4']]])->get();
+        $games = Game::all();
         return view('livewire.cms', ['games'=>$games])->layout('livewire.layouts.cms');
     }
 }
