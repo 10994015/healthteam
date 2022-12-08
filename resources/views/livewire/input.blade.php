@@ -4,7 +4,7 @@
         <input type="text" placeholder="請輸入學號" name="student" min="8" max="8" id="student" required>
         <input type="text" placeholder="請輸入姓名" name="name" required id="name">
         <div class="Satisfaction">
-            <p style="text-align:center;font-size:16px;font-weight: 600;">您對本次活動的滿意度為何?</p>
+            <p class='p-title'>您對本次活動的滿意度為何?</p>
             <select name="score" id="">
                 <option value="5">非常滿意</option>
                 <option value="4">滿意</option>
@@ -12,7 +12,7 @@
                 <option value="2">不滿意</option>
                 <option value="1">非常不滿意</option>
             </select>
-            <p style="text-align:center;font-size:16px;font-weight: 600;margin-top:10px">您覺得本次活動學習到?(可複選)</p>
+            <p class="p-title">您覺得本次活動學習到?(可複選)</p>
             <label for="q1">
                 <input type="checkbox" id="q1" name="q1" class="study">瞭解含糖飲料對身體的負面影響及多喝白開水的益處
             </label>

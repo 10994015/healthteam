@@ -33,6 +33,7 @@ form>input{
     font-size: 16px;
     border-radius: 8px;
 }
+
 form>input[type="submit"]{
     width: 100%;
     background-color: #ccc;
@@ -84,4 +85,37 @@ form>input[type="submit"]{
     outline: none;
     font-size: 15px;
     margin-top: 8px;
+}
+.p-title{
+    text-align:center;
+    font-size:16px;
+    font-weight: 600;
+    margin-top:10px;
+}
+@media screen and (max-height:690px){
+    .p-title{
+        font-size: 15px;
+    }
+    form>input{
+        height: 33px;
+        font-size: 13px;
+    }
+    .Satisfaction{
+        padding:8px 10px;
+        margin-bottom: 8px;
+    }
+    .Satisfaction label{
+        font-size: 14px;
+    }
+    .Satisfaction textarea{
+        height: 40px;
+    }
+    .Satisfaction>select{
+        height: 33px;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+    form>input[type="submit"]{
+        font-size: 14px;
+    }
 }
